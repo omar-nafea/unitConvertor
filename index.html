@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <div id="root">
+        <h1>Choose your unit</h1>
+        <button id="LengthBtn" class="Btn"><h2>Length</h2></button>
+        <section id="Length">
+            <h2 class="secHead">Length</h2>
+            <div class="lenFirstCont">
+                <input class="num" id="lenNum" type="number">
+                <div class="concon">
+                    <select id='lenSel' class="classic">
+                    <option>Meter</option>
+                    <option>Km</option>
+                    <option>Feet</option>
+                    <option>Cm</option>
+                    <option>Inch</option>
+                    <option>Miles</option>
+                </select>
+                </div>
+            </div>
+            <div class="lenSecCont">
+                <input type="text" readonly class="result" id="lenRes"></input>
+                <div class="select">
+                    <select id='lenSelTw' class="classic">
+                    <option>Feet</option>
+                    <option>Km</option>
+                    <option>Meter</option>
+                    <option>Cm</option>
+                    <option>Inch</option>
+                    <option>Miles</option>
+                </select>
+                </div>
+            </div>
+        </section>
+        <button id="TemperatureBtn" class="Btn"><h2>Temperature</h2></button>
+        <section id="Temperature">
+            <h2 class="secHead">Temperature</h2>
+            <div class="lenFirstCont">
+                <input class="num" id="tempNum" type="number">
+                <div class="concon">
+                    <select id='tempSel' class="classic">
+                    <option>Celsius</option>
+                    <option>Fahrenheit</option>
+                    <option>Kelvin</option>
+                </select>
+                </div>
+            </div>
+            <div class="lenSecCont">
+                <input type="text" readonly class="result" id="tempRes"></input>
+                <div class="select">
+                    <select id='tempSelTw' class="classic">
+                    <option>Fahrenheit</option>
+                    <option>Celsius</option>
+                    <option>Kelvin</option>
+                </select>
+                </div>
+            </div>
+        </section>
+        <button id="volumeBtn" class="Btn"><h2>Volume</h2></button>
+        <section id="Volume">
+            <h2 class="secHead">Volume</h2>
+            <div class="lenFirstCont">
+                <input class="num" id="volNum" type="number">
+                <div class="concon">
+                    <select id='volSel' class="classic">
+                    <option>Liter</option>
+                    <option>Gallon</option>
+                    <option>Cubic CM</option>
+                </select>
+                </div>
+            </div>
+            <div class="lenSecCont">
+                <input type="text" readonly class="result" id="volRes"></input>
+                <div class="select">
+                    <select id='volSelTw' class="classic">
+                    <option>Gallon</option>
+                    <option>Liter</option>
+                    <option>Cubic CM</option>
+                </select>
+                </div>
+            </div>
+        </section>
+        <button id="MassBtn" class="Btn"><h2>Mass</h2></button>
+        <section id="Mass">
+            <h2 class="secHead">Mass</h2>
+            <div class="lenFirstCont">
+                <input class="num" id="massNum" type="number">
+                <div class="concon">
+                    <select id='massSel' class="classic">
+                    <option>KG</option>
+                    <option>Gram</option>
+                    <option>Pound</option>
+                    <option>Ounce</option>
+                </select>
+                </div>
+            </div>
+            <div class="lenSecCont">
+                <input type="text" readonly class="result" id="massRes"></input>
+                <div class="select">
+                    <select id='massSelTw' class="classic">
+                    <option>Pound</option>
+                    <option>KG</option>
+                    <option>Gram</option>
+                    <option>Ounce</option>
+                </select>
+                </div>
+            </div>
+        </section>
+        <button id="dataBtn" class="Btn"><h2>Data</h2></button>
+        <section id="Data">
+            <h2 class="secHead">Data</h2>
+            <div class="lenFirstCont">
+                <input class="num" id="dataNum" type="number">
+                <div class="concon">
+                    <select id='dataSel' class="classic">
+                    <option>Bits</option>
+                    <option>Bytes</option>
+                    <option>Kilobytes</option>
+                    <option>Megabytes</option>
+                    <option>Gigabytes</option>
+                    <option>Terabytes</option>
+                </select>
+                </div>
+            </div>
+            <div class="lenSecCont">
+                <input type="text" readonly class="result" id="dataRes"></input>
+                <div class="select">
+                    <select id='dataSelTw' class="classic">
+                    <option>Bits</option>
+                    <option>Bytes</option>
+                    <option>Kilobytes</option>
+                    <option>Megabytes</option>
+                    <option>Gigabytes</option>
+                    <option>Terabytes</option>
+                </select>
+                </div>
+            </div>
+        </section>
+        <div id="back">
+            <button id="return"></button>
+        </div>
+    </div>
+    <footer>
+        <p class="end">Made with ❤️ by Omar Nafea</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+:root {
+    --dark: #233142;
+    --lighter: #455d7a;
+    --delight: #f95959;
+    --light: #e3e3e3;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    color: #fff;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+#root {
+    position: relative;
+    width: 30rem;
+    height: 35rem;
+    background-color: var(--lighter);
+    padding: 40px;
+    margin: 5rem auto;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+#Length,
+#Mass,
+#Temperature,
+#Volume,
+#Data {
+    display: none;
+}
+
+.Btn {
+    display: block;
+    width: 90%;
+    padding: 1rem;
+    background-color: var(--delight);
+    margin: 20px auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.secHead {
+    background-color: var(--light);
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.lenFirstCont,
+.lenSecCont {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+}
+
+.lenFirstCont {
+    top: 40%;
+}
+
+.lenSecCont {
+    top: 67%;
+}
+
+.lenFirstCont::after {
+    content: '';
+    position: absolute;
+    background-color: var(--dark);
+    width: 87%;
+    height: 2px;
+    top: 7rem;
+    left: 2rem
+}
+
+.num {
+    width: 15rem;
+    padding: 0.6rem;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+}
+
+.result {
+    width: 15rem;
+    height: 4rem;
+    background-color: var(--dark);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    outline: 0;
+}
+
+.concon,
+.select {
+    border: none;
+    outline: none;
+}
+
+select {
+    background-color: #fff;
+    font: inherit;
+    padding: 0.8rem 3rem 0.8rem 1rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 5px;
+}
+
+select.classic {
+    --main-color: #F0EBE3;
+    --sec-color: #E4DCCF;
+    --fourth-color: #576F72;
+    background-image: linear-gradient(45deg, transparent 50%, var(--main-color) 50%), linear-gradient(135deg, var(--sec-color) 50%, transparent 50%), linear-gradient(to right, var(--fourth-color), var(--fourth-color));
+    background-position: calc(100% - 20px) calc(1em + 5px), calc(100% - 15px) calc(1em + 5px), 100% 0;
+    background-size: 5px 5px, 5px 5px, 2.5em 3em;
+    background-repeat: no-repeat;
+}
+
+select.classic:focus {
+    outline: 0;
+}
+
+#back {
+    position: absolute;
+    left: 2rem;
+    top: 8%;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#return {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.8rem;
+    background-color: var(--delight);
+    width: 2rem;
+    height: 3px;
+    border: none;
+}
+
+#return::before,
+#return::after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    background-color: var(--delight);
+    width: 1.05rem;
+    height: 3px;
+}
+
+#return::before {
+    top: -5px;
+    transform: rotate(-45deg)
+}
+
+#return::after {
+    top: 5px;
+    transform: rotate(45deg)
+}
+
+.end {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    text-align: center;
+}
+
+@media (max-width: 1550px) {
+    html,
+    body {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    #root {
+        margin: 10px;
+        width: 95%;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .lenFirstCont::after {
+        left: 1.4rem
+    }
+    #back {
+        left: 0.8rem;
+        top: 7.5%;
+    }
+    .result,
+    .num {
+        width: 13rem;
+    }
+    select {
+        padding: 0.5rem 2rem 0.5rem 0.2rem;
+        text-align: center;
+        font-size: 14px;
+    }
+    select.classic {
+        background-position: calc(100% - 15px) calc(1em + 2px), calc(100% - 10px) calc(1em + 2px), 100% 0;
+        background-size: 5px 5px, 5px 5px, 2em 3em;
+    }
+}
